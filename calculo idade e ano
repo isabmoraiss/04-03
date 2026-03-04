@@ -1,0 +1,17 @@
+ class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Digite seu nome:");
+        string nome = Console.ReadLine();
+
+        Console.WriteLine("Digite o ano que você nasceu:");
+        int anoNascimento = Convert.ToInt32(Console.ReadLine());
+
+        int anoAtual = DateTime.Now.Year;
+        int idade = anoAtual - anoNascimento;
+
+        Console.WriteLine("Seu nome é: " + nome);
+        Console.WriteLine("Sua idade é: " + idade + " anos");
+    }
+}
