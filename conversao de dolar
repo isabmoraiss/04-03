@@ -1,0 +1,14 @@
+ class Program
+{
+    static void Main(string[] args)
+    {
+        double cotacaoDolar = 5.10;
+
+        Console.WriteLine("Digite o valor em dólar:");
+        double valorDolar = Convert.ToDouble(Console.ReadLine());
+
+        double valorReais = valorDolar * cotacaoDolar;
+
+        Console.WriteLine("Valor em reais: " + valorReais);
+    }
+}
